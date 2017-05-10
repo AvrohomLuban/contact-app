@@ -1,0 +1,16 @@
+<h1>Help improve our database by adding contacts</h1>
+<%= form_tag "/added_contact", method: :post do %>
+  <div>
+    <div>First Name:</div>
+    <input type="text" name="first_name">
+    <div>Last Name:</div>
+    <input type="text" name="last_name">
+    <div>Phone Number:</div>
+    <input type="text" name="phone">
+    <div>Email Address:</div>
+    <input type="text" name="email">
+  </div>
+  <div>
+    <input type="submit" value="Submit Message!">
+  </div>
+<% end %>

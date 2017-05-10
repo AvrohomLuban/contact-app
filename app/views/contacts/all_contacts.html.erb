@@ -1,0 +1,20 @@
+<h1 class = "text-center">Welcome to contacts database</h1>
+<div class = "container-fluid">
+  <div class = "row">
+    <div class = "col-xs-4">
+<p>The list of all contacts is as follows:</p>
+<% @all.each do |person| %>
+  <%= "#{person.first_name} #{person.last_name} : #{person.phone_number} , #{person.email} "%>
+  <br>
+  <% end %>
+    </div>
+    <div class = "col-xs-4">
+    <p>This is second column</p>
+    </div>
+    <div class = "col-xs-4">
+    <p>this should be third column</p>
+    </div>
+    </div>
+    </div>
+
+    
