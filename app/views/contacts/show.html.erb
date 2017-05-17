@@ -1,0 +1,11 @@
+<h1>Hi, and welcome to our contacts database</h1>
+<p>First Name: <%= @contact[:first_name] %></p>
+<p>Last Name: <%= @contact[:last_name] %></p>
+<p>Email: <%= @contact[:email] %></p>
+<p>Phone Number: <%= @contact.japan_phone %></p>
+<p>Created: <%= @contact.nice_created_at %><br>
+<p>Full name: <%= @contact.full_name %><br>
+
+To edit contact, <a href = "/contacts/<%= @contact.id %>/edit"> Click here</a>
+
+<%= link_to "To Destroy Contact click here", "/contacts/#{@contact.id}", method: :delete %>
