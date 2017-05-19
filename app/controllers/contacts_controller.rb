@@ -36,4 +36,9 @@ class ContactsController < ApplicationController
     render "destroy.html.erb"
   end
 
+  def search
+    @contacts = Contact.where("first_name ILIKE ? OR last_name ILIKE ? OR email ILIKE ? OR phone_number ILIKE ?", "%#{params[:search]}%", "%#{params[:search]}%", "%#{params[:search]}%", "%#{params[:search]}%")
+    render "index.html.erb"
+  end
+
 end

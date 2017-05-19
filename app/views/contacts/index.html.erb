@@ -1,4 +1,11 @@
 <h1 class = "text-center">Welcome to contacts database</h1>
+<%= form_tag "/contacts/search", method: :post do %>
+Search: <input type = "text" name = "search">
+<input type = "submit" name = "submit">
+<% end %>
+
+
+
 <div class = "container-fluid">
   <div class = "row">
     <div class = "col-xs-4">
